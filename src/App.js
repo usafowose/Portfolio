@@ -1,7 +1,11 @@
-import HelloWorldCard from './HelloWorld'
+import Header from './Header'
 
 function App() {
-  return <HelloWorldCard/>
+  return (
+    <div className='container-fluid' style={{ background: 'darkslategray' }}>
+      <Header />
+    </div>
+  )
 }
 
 export default App;
