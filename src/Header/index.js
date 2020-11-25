@@ -4,7 +4,7 @@ const Header = (props) => {
     return (
   <div>
     <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -13,13 +13,13 @@ const Header = (props) => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                 <a className="nav-link" href="#" style={{color: 'grey'}}>Home <span className="sr-only">(current)</span></a>
+                 <a className="nav-link" href="#" style={{color: 'grey', fontFamily: 'sans-serif'}}>Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Link</a>
+                  <a className="nav-link" href="#" style={{fontFamily: 'sans-serif'}}>Link</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style={{color: 'grey', fontFamily: 'sans-serif'}}>Disabled</a>
                 </li>
               </ul>
               <form className="form-inline my-2 my-lg-0">
