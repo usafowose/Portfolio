@@ -16,11 +16,11 @@
 * Dark Background 
 * Dark/Glowing Grey Components
 * Change Hover Colors
-* 
+* GOOGLE FONTS?
 
 ### 3.
 * Other Cool Things About Me / Things I'm Passionate About + Pics/Videos
 * Top Technologies I Use in Development/ Sites
 * Girlfriend
 * CodeWars Profile Link
-* 
+
