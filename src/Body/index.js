@@ -5,9 +5,9 @@ import BodyRight from './Body_Right'
 
 const Body = (props) => {
     return (
-        <div className='container-fluid border border-danger col-10 rounded' style={{ minHeight: '60rem', marginTop: 20, backgroundColor: '', overflow: 'auto', padding:15}}>
+        <div className='container-fluid border border-danger col-10 rounded' style={{ minHeight: '60rem', marginTop: 20, backgroundColor: '', overflow: 'auto', padding: 'none' }}>
             <BodyLeft />
-            <BodyRight/>
+            <BodyRight />
         </div>
     )
 }
