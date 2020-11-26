@@ -15,7 +15,6 @@ const HorizontalDiv = (props) => {
         <p>Hi</p>
         <p>Hi</p>
         <p>Hi</p>
-        <p>Hi</p>
 
       </div>
 
