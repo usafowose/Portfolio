@@ -7,12 +7,16 @@ const BodyLeft = (props) => {
             <HorizontalDiv />
             <p>Hello</p>
             <p>Hello</p>
+            <HorizontalDiv />
             <p>Hello</p>
             <p>Hello</p>
+            <HorizontalDiv />
             <p>Hello</p>
             <p>Hello</p>
+            <HorizontalDiv />
             <p>Hello</p>
             <p>Hello</p>
+            <HorizontalDiv />
             <p>Hello</p>
         </div>
     )
