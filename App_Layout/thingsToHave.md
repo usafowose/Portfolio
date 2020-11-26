@@ -12,15 +12,19 @@
 * Terminal w/Hard Coded Commands
 * Link to Lectures Library (Youtube/Other)
 
+### 1A: Bringing In The Data
+
+
 ## 2. General Design 
 * Dark Background 
 * Dark/Glowing Grey Components
 * Change Hover Colors
 * GOOGLE FONTS?
+* Extra Styling
+### 2A: Styling Methods 
 
-### 3.
+## 3. Other
 * Other Cool Things About Me / Things I'm Passionate About + Pics/Videos
 * Top Technologies I Use in Development/ Sites
 * Girlfriend
 * CodeWars Profile Link
-
