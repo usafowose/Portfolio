@@ -2,10 +2,18 @@ import React from 'react';
 import BodyLeft from './Body_Left'
 import BodyRight from './Body_Right'
 
+const bodyContainerStyle = {
+    minHeight: '60rem',
+    marginTop: 20,
+    overflow: 'auto',
+    padding: 'none', 
+    opacity: 0.95,
+    backgroundColor: 'white'
+}
 
 const Body = (props) => {
     return (
-        <div className='container-fluid border border-danger col-10 rounded' style={{ minHeight: '60rem', marginTop: 20, backgroundColor: '', overflow: 'auto', padding: 'none' }}>
+        <div className='container-fluid border border-success col-10' style={bodyContainerStyle}>
             <BodyLeft />
             <BodyRight />
         </div>

@@ -1,10 +1,15 @@
 import React from 'react'
 
+const HeaderStyle = {
+  position: 'static',
+  opacity: 0.9
+}
+
 const Header = (props) => {
     return (
   <div>
-    <header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+    <header style={HeaderStyle}>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded fixed">
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
