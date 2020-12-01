@@ -11,9 +11,13 @@
 * Technologies Known and Showcase of Such 
 * Terminal w/Hard Coded Commands
 * Link to Lectures Library (Youtube/Other)
+## 3. Other
+* Other Cool Things About Me / Things I'm Passionate About + Pics/Videos
+* Top Technologies I Use in Development/ Sites
+* Girlfriend
+* CodeWars Profile Link
 
 ### 1A: Bringing In The Data
-
 
 ## 2. General Design 
 * Dark Background 
@@ -23,8 +27,3 @@
 * Extra Styling
 ### 2A: Styling Methods 
 
-## 3. Other
-* Other Cool Things About Me / Things I'm Passionate About + Pics/Videos
-* Top Technologies I Use in Development/ Sites
-* Girlfriend
-* CodeWars Profile Link
