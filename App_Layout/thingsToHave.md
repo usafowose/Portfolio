@@ -4,13 +4,14 @@
 3. Extra Features
 
 ## 1. Content 
-* Resume 
-* Experiences 
-* Pictures 
-* Apps / Links 
+* Resume/ Github Link/ LinkedIn, CodeWars Profile Link, YOUTUBE? -- ALL LOGOS
+* More About Me (Bio/Passions/Statement: 'I like to do deep work, learn new technologies, whatever') 
+* SideNav Menu To Animate with Homepage (Remove NavBar)
+* My Work (Mongo)
 * Technologies Known and Showcase of Such 
 * Terminal w/Hard Coded Commands
 * Link to Lectures Library (Youtube/Other)
+* Experiences 
 ## 3. Other
 * Other Cool Things About Me / Things I'm Passionate About + Pics/Videos
 * Top Technologies I Use in Development/ Sites
