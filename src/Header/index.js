@@ -1,41 +1,47 @@
 import React from 'react'
 
+
 const HeaderStyle = {
-  position: 'static',
-  opacity: 0.9
+  headerNav: {
+    // position: 'static',
+    opacity: 0.4,
+    // height: 100
+  },
+  unorderedList: {
+    marginRight: '5rem',
+    marginLeft: '5rem'
+  },
+  aTag: {
+    fontFamily: 'sans-serif',
+    color: 'white'
+  }
 }
 
+
+
 const Header = (props) => {
-    return (
-  <div>
-    <header style={HeaderStyle}>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded fixed">
-
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                 <a className="nav-link" href="#" style={{color: 'grey', fontFamily: 'sans-serif'}}>Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#" style={{fontFamily: 'sans-serif'}}>Link</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style={{color: 'grey', fontFamily: 'sans-serif'}}>Disabled</a>
-                </li>
-              </ul>
-              <form className="form-inline my-2 my-lg-0">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
+  return (
+    <header>
+      <nav className="navbar justify-content-start bg-dark rounded" style={HeaderStyle.headerNav}>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <ul className="nav nav-justified">
+              {props.tabNames.map((tabName => <li className="nav-item" style={HeaderStyle.unorderedList}>
+                <a className="nav-link" href="#" style={HeaderStyle.aTag}>{tabName}</a>
+              </li>))}
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
         </nav>
+      </nav>
     </header>
-  </div>
-    )
+
+
+  )
 }
 
 export default Header;
