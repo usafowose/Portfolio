@@ -17,29 +17,31 @@ const HeaderStyle = {
   }
 }
 
-
-
 const Header = (props) => {
   return (
     <header>
       <nav className="navbar justify-content-start bg-dark rounded" style={HeaderStyle.headerNav}>
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
+
+        <div className="collapse" id="navbarToggleExternalContent">
+          <div className="bg-dark p-4">
+
             <ul className="nav nav-justified">
-              {props.tabNames.map((tabName => <li className="nav-item" style={HeaderStyle.unorderedList}>
+              {props.tabNames.map((tabName => <li className="nav-item" style={HeaderStyle.unorderedList} key={tabName}>
                 <a className="nav-link" href="#" style={HeaderStyle.aTag}>{tabName}</a>
               </li>))}
             </ul>
+
           </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" ></span>
+
+        <nav className="navbar navbar-dark bg-dark">
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" ></span>
           </button>
         </nav>
+
       </nav>
     </header>
-
 
   )
 }
