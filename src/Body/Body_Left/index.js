@@ -1,34 +1,27 @@
 import React from 'react'
-import HorizontalDiv from './horizontal_cards'
+import AddTab from './../Body_Left/Tech_Stack_Item'
+import techStackItems from './Tech_Stack_Item/all_stack_items'
 
-const bodyLeftStyles = {
+
+const bodyLeftStyles = [{
     minHeight: '25',
     margin: 10,
-    marginRight: 13,
-    marginLeft: 11,
-    backgroundColor: 'lightBlue',
+    marginRight: 23,
+    marginLeft: 1,
+    // backgroundColor: 'lightBlue',
     float: 'left',
     width: '48%',
     overflow: 'auto'
-}
+},
+{
+    color: 'white'
+}]
 
 const BodyLeft = (props) => {
+
     return (
-        <div className='container-fluid border border-success rounded' style={bodyLeftStyles}>
-            <HorizontalDiv />
-            <p>Hello</p>
-            <p>Hello</p>
-            <HorizontalDiv />
-            <p>Hello</p>
-            <p>Hello</p>
-            <HorizontalDiv />
-            <p>Hello</p>
-            <p>Hello</p>
-            <HorizontalDiv />
-            <p>Hello</p>
-            <p>Hello</p>
-            <HorizontalDiv />
-            <p>Hello</p>
+        <div className='container-fluid rounded' style={bodyLeftStyles[0]}>
+            <AddTab items={techStackItems} />
         </div>
     )
 }
