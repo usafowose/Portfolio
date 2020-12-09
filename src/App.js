@@ -1,6 +1,6 @@
-import Header from './Header'
-import FloatingBar from './Floating_Bar'
-import Body from './Body'
+import Header from './components/Header'
+import FloatingBar from './components/Floating_Bar'
+import Body from './components/Body'
 import Background from './assets/images/glow-wave-system.jpg'
 
 

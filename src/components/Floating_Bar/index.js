@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from './../assets/images/glow-wave-system.jpg'
+// import Background from './../../assets/images/glow-wave-system.jpg'
 
 
 const FloatingBarStyles = {
