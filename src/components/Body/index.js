@@ -7,13 +7,13 @@ const bodyContainerStyle = {
     marginTop: 20,
     overflow: 'auto',
     padding: 'none', 
-    opacity: 0.9,
-    backgroundColor: 'aliceBlue'
+    opacity: 1.0,
+    backgroundColor: 'none'
 }
 
 const Body = (props) => {
     return (
-        <div className='container-fluid border border-success col-11 rounded' style={bodyContainerStyle}>
+        <div className='container-fluid col-11 rounded' style={bodyContainerStyle}>
             <BodyLeft />
             <BodyRight />
         </div>
