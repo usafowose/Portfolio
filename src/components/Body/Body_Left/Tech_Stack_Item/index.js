@@ -24,7 +24,7 @@ const addTabStyle = {
         height: '100%'
     },
     proj_defntn: {
-        backgroundColor: 'aqua',
+        // backgroundColor: 'aqua',
         margin: 0,
         paddingTop: 10,
         maxHeight: '10rem',
@@ -39,9 +39,9 @@ const AddTab = (props) => {
 
     return props.items.map(techItem => {
         return (
-            <div className=' container-fluid justify-content-center row col-12 border border-danger' id='tech_stack_whole_row' style={addTabStyle.techStackRow} key={techItem.key}>
+            <div className=' container-fluid justify-content-center row col-12 alert alert-success' id='tech_stack_whole_row' style={addTabStyle.techStackRow} key={techItem.key}>
 
-                <div className='col-sm border border-danger' style={addTabStyle.logoDiv} onClick={() => alert('You Clicked In This Div')} id='lang_logo'>
+                <div className='col-sm' style={addTabStyle.logoDiv} onClick={() => alert('You Clicked In This Div')} id='lang_logo'>
                     <img src={techItem.logoSrc} alt={`${techItem.name} Logo`} style={addTabStyle.logoImg}></img>
                 </div>
 
