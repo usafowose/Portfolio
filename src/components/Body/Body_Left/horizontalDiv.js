@@ -10,12 +10,20 @@ const divStyle = [{
   float: 'left'
 }]
 
-const HorizontalDiv = (props) => {
-  return (
-    <div className='container-fluid col-12 row rounded border justify-content-center' style={divStyle[0]}>
-      <p>HelloOO</p>
-    </div>
-  )
+class HorizontalDiv extends React.Component{
+  // constructor(props){
+  //   super(props)
+  // }
+
+  // Above un-commented due to no unusued constructor rule. work must be done within constructor for the constructor to be necessary. Ohterwise, babel, will automatically implement the constructor itself once it compiles. 
+
+  render() {
+    return (
+      <div className='container-fluid col-12 row rounded border justify-content-center' style={divStyle[0]}>
+        <p>HelloOO</p>
+      </div>
+    )
+  }
 }
 
 export default HorizontalDiv

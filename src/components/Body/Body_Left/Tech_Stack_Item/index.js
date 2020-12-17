@@ -3,7 +3,7 @@ import styles from './stackItemRow.module.css'
 
 
 class AddTab extends React.Component {
-
+  
   render() {
     return this.props.items.map(techItem => {
       return (
@@ -19,8 +19,7 @@ class AddTab extends React.Component {
 
           </div>
       )
-     }
-    ) 
+    });
   }
 }
 

@@ -10,10 +10,12 @@ const pageStyle = {
   backgroundSize: 'cover'
 }
 
-function App () {
+function App() {
   return (
     <div className='container-fluid' style={pageStyle}>
-      <Header tabNames={['Home', 'Link', 'Menu', 'Disabled', 'Extra', 'Stuff']}/>
+      <Header
+        tabNames={['Home', 'Link', 'Menu', 'Disabled', 'Extra', 'Stuff']}
+      />
       <FloatingBar />
       <Body />
       {/* <Footer/> */}

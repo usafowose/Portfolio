@@ -1,8 +1,12 @@
 import React from 'react'; 
 import styles from './resume.module.css'
 
-const ResumeTab = (props) => {
-  return (
+class ResumeTab extends React.Component{
+  // constructor(props) {
+  //   super(props)
+  // }
+  render() {
+   return (
     <div className={`container-fluid col-12 row rounded justify-content-center resumeContainer ${styles.resumeContainer}`}>
       <div className={`rounded ovalParent ${styles.ovalParent}`} id="oval_parent">
         <a href='https://www.google.com'>
@@ -12,7 +16,7 @@ const ResumeTab = (props) => {
         
       </div>
     </div>
-  )
+  ) 
+  }
 }
-
 export default ResumeTab;
