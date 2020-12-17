@@ -1,0 +1,10 @@
+.bodyRightContainer {
+  min-height: 25px;
+  float: left;
+  margin-left: 15px;
+  width: 49%;
+  overflow: hidden;
+  padding: 0px;
+}
+
+

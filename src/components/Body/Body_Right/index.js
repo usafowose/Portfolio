@@ -2,27 +2,16 @@ import React from 'react'
 import ResumeTab from './Resume_Tab'
 import YoutubeEmbed from './../../Embed-iFrame'
 import HorizontalDiv from './../Body_Left/horizontalDiv'
-
-const bodyRightStyle = [
-    {
-        minHeight: '25',
-        float: 'left',
-        // backgroundColor: 'grey',
-        marginLeft: 13,
-        width: '49%',
-        overflow: 'hidden',
-        padding: 0
-    },
-    {
-        color: 'white'
-    }]
+import PersonalLife from './Personal_Life'
+import styles from './bodyRight.module.css'
 
 const BodyRight = (props) => {
     return (
-        <div className='container-fluid rounded' style={bodyRightStyle[0]}>
-            <ResumeTab/>
+        <div className={`container-fluid rounded justify-content-center bodyRightContainer ${styles.bodyRightContainer}`}>
+            <ResumeTab />
             <YoutubeEmbed />
-            <HorizontalDiv/>
+            {/* <HorizontalDiv/> */}
+            <PersonalLife />
         </div>
     )
 }

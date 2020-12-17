@@ -1,33 +1,18 @@
 import React from 'react'
+import styles from './header.module.css'
 
-
-const HeaderStyle = {
-  headerNav: {
-    // position: 'static',
-    opacity: 0.4,
-    // height: 100
-  },
-  unorderedList: {
-    marginRight: '5rem',
-    marginLeft: '5rem'
-  },
-  aTag: {
-    fontFamily: 'sans-serif',
-    color: 'white'
-  }
-}
 
 const Header = (props) => {
   return (
     <header>
-      <nav className="navbar justify-content-start bg-dark rounded" style={HeaderStyle.headerNav}>
+      <nav className={`navbar justify-content-start bg-dark rounded headerNav ${styles.headerNav}`}>
 
         <div className="collapse" id="navbarToggleExternalContent">
           <div className="bg-dark p-4">
 
             <ul className="nav nav-justified">
-              {props.tabNames.map((tabName => <li className="nav-item" style={HeaderStyle.unorderedList} key={tabName}>
-                <a className="nav-link" href="#" style={HeaderStyle.aTag}>{tabName}</a>
+              {props.tabNames.map((tabName => <li className={`nav-item orderedList ${styles.orderedList}`} key={tabName}>
+                <a className={`nav-link aTag ${styles.aTag}`}  href="#">{tabName}</a>
               </li>))}
             </ul>
 

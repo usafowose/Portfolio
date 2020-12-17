@@ -1,0 +1,9 @@
+.iFrameContainer {
+  margin: 10px, 0px, 10px, 1px; 
+  min-height: 150px;
+  overflow: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  opacity: 1.0;
+
+}

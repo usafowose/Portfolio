@@ -1,0 +1,29 @@
+.techStackRow {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.logoDiv {
+  background-color: green;
+  overflow: hidden;
+  margin-top: 8px;
+  top: 12%;
+  padding-left: 0px;
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.projDefntn {
+  margin: 0px;
+  padding-top: 10px;
+  max-height: 10rem;
+  overflow: auto;
+}

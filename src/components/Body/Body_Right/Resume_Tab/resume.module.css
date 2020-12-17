@@ -1,0 +1,58 @@
+/* const divStyle = [{
+  // backgroundColor: 'teal', 
+  marginTop: 10,
+  marginBottom: 10,
+  marginLeft: 1,
+  minHeight: 150,
+  overflow: 'auto',
+  float: 'left'
+},
+{
+  marginTop: 25,
+  background: 'none',
+  width: 220,
+  height: 100,
+  overflow: 'hidden'
+},
+
+{
+
+  width: 220,
+  height: 100,
+  margin: '10px, 0, 0, 10px',
+  background: 'white',
+  borderRadius: '100px / 50px'
+}, 
+{
+
+  marginLeft: 27, 
+  marginTop: 35 
+}] */
+
+.resumeContainer {
+  margin: 10px, 0px, 10px, 1px;
+  min-height: 150px;
+  overflow: auto;
+  float: left;
+}
+
+.ovalParent {
+  margin-top: 25px;
+  background: none;
+  width: 220px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.ovalChild {
+  width: 220px;
+  height: 100px;
+  margin: 10px, 0px, 0px, 10px;
+  background: white;
+  border-radius: 100px/50px;
+}
+
+.innerText {
+  margin-left: 27px;
+  margin-top: 35px;
+}

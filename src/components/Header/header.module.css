@@ -1,0 +1,13 @@
+.headerNav {
+  opacity: 0.4;
+}
+
+.orderedList {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.aTag {
+  font-family: sans-serif;
+  color: white;
+}

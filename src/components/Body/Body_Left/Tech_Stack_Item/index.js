@@ -1,59 +1,27 @@
 import React from 'react';
+import styles from './stackItemRow.module.css'
 
 
-const addTabStyle = {
-    techStackRow: {
-        paddingLeft: 0,
-        paddingRight: 0,
-        marginBottom: '10px',
-        marginLeft: '-10',
-        marginTop: 10
-    },
-    logoDiv: {
-        backgroundColor: 'green',
-        overflow: 'hidden',
-        marginTop: 8,
-        top: '12%',
-        paddingLeft: 0,
-        maxHeight: '5rem',
-        maxWidth: '5rem',
+class AddTab extends React.Component {
 
-    },
-    logoImg: {
-        width: '100%',
-        height: '100%'
-    },
-    proj_defntn: {
-        // backgroundColor: 'aqua',
-        margin: 0,
-        paddingTop: 10,
-        maxHeight: '10rem',
-        overflow: 'auto'
-    }
+  render() {
+    return this.props.items.map(techItem => {
+      return (
+          <div className={`container-fluid justify-content-center row col-12 alert alert-success techStackRow ${styles.techStackRow}`} id='tech_stack_whole_row' key={techItem.key}>
+              <div className={`col-sm logoDiv ${styles.logoDiv}`} onClick={() => alert('You Clicked In This Div')} id='lang_logo'>
+                  <img className={`logoImg ${styles.logoImg}`} src={techItem.logoSrc} alt={`${techItem.name} Logo`}></img>
+              </div>
 
+              <div className={`col-sm projDefntn ${styles.projDefntn}`}id='proj_defntn'>
+                  <h6>{techItem.tabTitle}</h6>
+                  <p>{techItem.tabContent}</p>
+              </div>
+
+          </div>
+      )
+     }
+    ) 
+  }
 }
 
-
-
-const AddTab = (props) => {
-
-    return props.items.map(techItem => {
-        return (
-            <div className=' container-fluid justify-content-center row col-12 alert alert-success' id='tech_stack_whole_row' style={addTabStyle.techStackRow} key={techItem.key}>
-
-                <div className='col-sm' style={addTabStyle.logoDiv} onClick={() => alert('You Clicked In This Div')} id='lang_logo'>
-                    <img src={techItem.logoSrc} alt={`${techItem.name} Logo`} style={addTabStyle.logoImg}></img>
-                </div>
-
-                <div className='col-sm' style={addTabStyle.proj_defntn} id='proj_defntn'>
-                    <h6>{techItem.tabTitle}</h6>
-                    <p>{techItem.tabContent}</p>
-                </div>
-
-            </div>
-        )
-    }
-    )
-}
-
-export default AddTab
+export default AddTab;

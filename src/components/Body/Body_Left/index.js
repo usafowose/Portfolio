@@ -1,27 +1,18 @@
 import React from 'react'
 import AddTab from './Tech_Stack_Item'
 import techStackItems from './Tech_Stack_Item/all_stack_items'
+import styles from './bodyLeft.module.css'
 
 
-const bodyLeftStyles = [{
-    minHeight: '25',
-    margin: 10,
-    marginRight: 23,
-    marginLeft: 1,
-    // backgroundColor: 'lightBlue',
-    float: 'left',
-    width: '48%',
-    overflow: 'auto'
-},
-{
-    color: 'white'
-}]
 
 const BodyLeft = (props) => {
-
+    console.log(props)
     return (
-        <div className='container-fluid rounded' style={bodyLeftStyles[0]}>
-            <AddTab items={techStackItems} />
+
+        <div className={`container-fluid rounded ${styles.container}`}  >
+            <AddTab
+                items={techStackItems}                
+            />
         </div>
     )
 }

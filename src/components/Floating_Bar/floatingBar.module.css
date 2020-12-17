@@ -1,0 +1,41 @@
+.containerClass {
+  margin-top: 10px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.anyText {
+  color: white;
+  font-family: sans-serif;
+}
+
+.cardStyles {
+  margin-right: 10px;
+}
+
+.profileImageDiv {
+  width: 15rem;
+  background-color: black;
+  margin-left: 4rem;
+  margin-right: 13rem;
+  position: absolute;
+  overflow: hidden;
+  top: 12%;
+}
+
+.navItem {
+  overflow: hidden;
+}
+
+.row {
+  margin-left: 30rem;
+  text-align: center;
+}
+
+.listItem {
+  margin-top: 15px;
+}
+
+.cardImg {
+  min-height: 160px;
+}

@@ -1,0 +1,17 @@
+/* const bodyContainerStyle = {
+  minHeight: '60rem',
+  marginTop: 20,
+  overflow: 'auto',
+  padding: 'none',
+  opacity: 1.0,
+  backgroundColor: 'none'
+} */
+
+.bodyContainer {
+  min-height: 60rem;
+  margin-top: 20px;
+  overflow: auto;
+  padding: none;
+  opacity: 1;
+  background-color: none;
+}

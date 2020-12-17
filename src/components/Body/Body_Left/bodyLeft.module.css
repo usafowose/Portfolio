@@ -1,0 +1,9 @@
+.container {
+  min-height: 25px;
+  margin: 10px;
+  margin-right: 23px;
+  margin-left: 1px;
+  float: left;
+  width: 48%;
+  overflow: auto;
+}
